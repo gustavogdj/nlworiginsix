@@ -73,6 +73,7 @@ scrollReveal.reveal(
     #contact .text, #contact .links,
     footer .brand, footer .social-media
     `, {interval: 100})
+    
 /* BOTÃO VOLTAR PARA O TOPO */
 
 const backToTopButton = document.querySelector('.back-to-top')
