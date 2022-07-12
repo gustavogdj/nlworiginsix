@@ -26,7 +26,7 @@ img {
 
     /* COLORS */
 
-    --hue: 159;
+    --hue: 1007;
 
     /* HSL COLOR MODE */
 
@@ -173,6 +173,8 @@ body::-webkit-scrollbar-thumb:horizontal {
 
 #header.scroll {
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
+    background-color: var(--base-color-second);
+    opacity: 75%;
 }
 
 /* LOGO */
@@ -552,6 +554,10 @@ footer .social-media a:hover {
     transform: translateY(-0.7rem);
 }
 
+footer .copy {
+    color: var(--text-color-light);
+}
+
 /* BACK TO TOP */
 
 .back-to-top {
@@ -649,20 +655,37 @@ footer .social-media a:hover {
 
     #home .image {
         order: 1;
+        padding-left: 4rem;
+        padding-right: -8rem;
     }
 
     #home .text {
         order: 0;
         max-width: 24.5rem;
         text-align: left;
+        padding-right: 2rem;
     }
 
      /* ABOUT */
 
      #about .container {
         grid-auto-flow: column;
+        margin: 2rem auto;
+        margin-top: -2rem;
+        padding-left: 7rem;
         margin: 0 auto;
      }
+
+     #about .image {
+        order: 0;   
+     }
+
+     #about .text {
+        order: 1;
+        text-align: left;
+        padding-right: -4rem;
+        padding-left: 2rem;
+    }
 
      /* SERVICES */
 
@@ -670,6 +693,7 @@ footer .social-media a:hover {
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        margin-top: -2rem;
     }
 
     .cards {
@@ -686,6 +710,7 @@ footer .social-media a:hover {
      #testimonials .container {
         margin-left: auto;
         margin-right: auto;
+        margin-top: -2rem;
     }
     
     /* CONTACT */
@@ -693,13 +718,14 @@ footer .social-media a:hover {
     #contact .container {
         grid-auto-flow: column;
         align-items: center;
+        margin-top: -2rem;
     }
 
     #contact .text {
         max-width: 25rem;
     }
 
-    .contact-grid {
+    #contact .contact-grid {
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -720,6 +746,17 @@ footer .social-media a:hover {
     
     footer .logo {
         font-size: 2.25rem;
+        text-align: right;
+    }
+
+    footer .brand {
+        text-align: right;
+    }
+
+    footer .copy {
+        text-align: center;
+        margin-top: 7rem;
+        color: var(--text-color-light);
     }
 }
 
@@ -731,11 +768,7 @@ footer .social-media a:hover {
 /* MEDIUM DEVICES: 992 > */
 
 @media (min-width: 62rem) {
-    :root {
-        --title-font-size: 2.25rem;
-        --subtitle-font-size: 1.125rem;
-    }
-}
+} 
 
 /* MINIMUM DEVICES: 767 > */
 

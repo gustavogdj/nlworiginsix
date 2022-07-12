@@ -58,7 +58,7 @@ const swiper = new Swiper ('.swiper-container', {
 
 /* SCROLLREVEAL: OS ELEMENTOS VÃO SURGINDO NA PÁGINA AO ACIONAR O SCROLL */
 
-const scrollReveal = ScrollReveal({
+const scrollReveal = scrollReveal({
     origin: 'top',
     distance: '30px',
     duration: 700,
